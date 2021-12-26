@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue | 网站标题</title>
+    <meta name="generator" content="VuePress 1.9.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.20b92855.css" as="style"><link rel="preload" href="/assets/js/app.2bf13046.js" as="script"><link rel="preload" href="/assets/js/2.d2965c34.js" as="script"><link rel="preload" href="/assets/js/10.4c0173d4.js" as="script"><link rel="prefetch" href="/assets/js/11.6d43fa2c.js"><link rel="prefetch" href="/assets/js/12.7323437c.js"><link rel="prefetch" href="/assets/js/13.a5fabeb6.js"><link rel="prefetch" href="/assets/js/14.d13aa1e4.js"><link rel="prefetch" href="/assets/js/15.7804a37b.js"><link rel="prefetch" href="/assets/js/16.64fbc108.js"><link rel="prefetch" href="/assets/js/17.fd1258a6.js"><link rel="prefetch" href="/assets/js/18.738c0819.js"><link rel="prefetch" href="/assets/js/3.3086e9e4.js"><link rel="prefetch" href="/assets/js/4.5a4f4779.js"><link rel="prefetch" href="/assets/js/5.40592602.js"><link rel="prefetch" href="/assets/js/6.209d3b22.js"><link rel="prefetch" href="/assets/js/7.ff89161b.js"><link rel="prefetch" href="/assets/js/8.5fab2969.js"><link rel="prefetch" href="/assets/js/9.d0c82ba8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.20b92855.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">网站标题</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Home
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Home
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/accumulate/" aria-current="page" class="sidebar-link">测试界面</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>第一部分</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue"><a href="#vue" class="header-anchor">#</a> vue</h1> <h2 id="基本形式"><a href="#基本形式" class="header-anchor">#</a> 基本形式</h2> <p>vue通过一个文件引入，利用挂载的方式绑定dom元素</p> <p>其基本形式可以表现为：</p> <div class="language- extra-class"><pre><code>const app = new Vue({
+el:'#app',
+data:{
+    message:0
+
+},
+methods:{
+    add:function(){
+        this.message++;
+    },
+    sub:function(){
+        this.message--;
+    }
+}
+})
+</code></pre></div><p>在这里可以看到，vue是一个对象，通过new一个vue实例，我们在里面修改data等属性和methods属性（属性里面嵌套属性）</p> <h2 id="mvvm与mvc"><a href="#mvvm与mvc" class="header-anchor">#</a> mvvm与mvc</h2> <p>MVC是包括view视图层、controller控制层、model数据层。各部分之间的通信都是单向的。
+view《——》control都作用于model</p> <p>MVVM包括view视图层、model数据层、viewmodel层。各部分通信都是双向的。
+MVC的分离不如MVVM。view和model有一定的依赖性</p> <h2 id="方法和函数在js里是同种东西-但java等就没有函数-因为方法要在对象中"><a href="#方法和函数在js里是同种东西-但java等就没有函数-因为方法要在对象中" class="header-anchor">#</a> 方法和函数在js里是同种东西，但java等就没有函数，因为方法要在对象中</h2> <h2 id="vue的生命周期"><a href="#vue的生命周期" class="header-anchor">#</a> Vue的生命周期</h2> <h3 id="回调"><a href="#回调" class="header-anchor">#</a> 回调</h3> <h2 id="vue指令"><a href="#vue指令" class="header-anchor">#</a> Vue指令</h2> <h3 id="插值指令"><a href="#插值指令" class="header-anchor">#</a> 插值指令</h3> <ul><li>v-once 不允许轻易修改</li> <li>v-html 将字符串解析为html的形式，容易引起*xss安全问题</li> <li>v-pre 将其中的原封不动的展示出来，一点不变</li> <li>v-cloak 优化用户，在css中 [v-clock]=none,实现防止闪烁</li></ul> <h3 id="动态绑定-v-bind"><a href="#动态绑定-v-bind" class="header-anchor">#</a> 动态绑定 v-bind</h3> <ul><li><p>v-bind 动态绑定 ,语法糖为 “：”  这是用来绑定 {}里面的东西</p> <p>不能使用 <img src="{{}}">，{{}}只能放在标签内容中
+<img>&amp;&amp;语法糖  <a href="img:src=%22url%22">img:src=&quot;url&quot;</a>,</p> <p>动态绑定其中的属性，让其变成变量的形式</p> <p>v-bind也能绑定class属性,可以创建对象</p> <div class="language- extra-class"><pre><code>  &lt;div :class{classname：value_bool,classname:value_bool}&gt;&lt;/div&gt;
+</code></pre></div></li></ul> <p>通过布尔值设置class是否会被展示
+也可以直接绑定style属性</p> <div class="language- extra-class"><pre><code>    &lt;div :class=&quot;{classname:bool}&quot;&gt;
+    &lt;div :style=&quot;{stylename:value}&quot;&gt; 例如&lt;div :style={fontSize:'50px',backgroud=changeback}&gt;,
+单引号需要加，否则在value端会被解析为data中的变量，这样会出问题。。
+</code></pre></div><h3 id="双向绑定-v-model"><a href="#双向绑定-v-model" class="header-anchor">#</a> 双向绑定 v-model</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div id = test&gt;
+&lt;input type=&quot;text&quot; value=&quot;name&quot;
+&lt;/div&gt;//
+&lt;input type=&quot;button&quot; value=&quot;showname&quot; @click=&quot;showname&quot;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这样的方法，只是用id得到控件后调用GetElementbyId(test).name=&quot;text的值&quot;，不能做得到从视图层中设置数据的变化</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+  &lt;input type=&quot;text&quot; v-model=&quot;message&quot;&gt;
+&lt;/div&gt;
+&lt;b&gt;{{message}}&lt;/b&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var app = new Vue({
+   el:'#app',
+   data:{
+     message:&quot;Vue之父-尤雨溪&quot;
+   },
+  })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>这样的方式，在视图中改变value的值，也能做到更改message，实现双向数据绑定。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div id ='app'&gt;
+&lt;input type=&quot;text&quot; v-on:input=&quot;changemessage&quot; v-bind:value=&quot;message&quot;&gt;//另一种写法
+&lt;b&gt;{{message}}&lt;/b&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var app = new Vue({
+   el:'#app',
+   data:{
+     message:&quot;Vue之父-尤雨溪&quot;
+   },
+   method:{
+   changemessage(event){
+   	this.message=event.target.value;
+   	}
+   }
+  })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>另一种写法,将 value的值用v-bind绑定到message上，使视图层中的成为变量，然后再通过v-on监听事件，当输入事件时，调用事件的target方法中的value属性</p> <h3 id="监听指令-v-on"><a href="#监听指令-v-on" class="header-anchor">#</a> 监听指令 v-on</h3> <ul><li><p>v-on:click 语法糖 @click 用于绑定事件</p> <p>&lt;button @action=&quot;function_name&quot;&gt;<button></button></p></li></ul> <h2 id="计算属性"><a href="#计算属性" class="header-anchor">#</a> 计算属性</h2> <p>计算属性computed在微信里面是没有的</p> <div class="language- extra-class"><pre><code>computed:{
+    Fullname：function(){
+        return this.firstname+this.lastname;
+    }
+}
+</code></pre></div><p>计算属性一般情况下不设置set方法</p> <div class="language- extra-class"><pre><code>computed:{
+    Fullname：{
+        set:function(){
+            通过set来读取值，大部分情况都不用
+        }
+        get：function(){
+        return this.firstname+this.lastname;
+        }
+    }
+}
+</code></pre></div><p>这种方法在实现时可以不加小括号 Fullname 直接被视为函数</p> <p>计算属性和方法有一些区别，计算属性在调用时会先执行，方法没有缓存，执行几次调用几次，降低速度
+典型函数：fliter，reduce，map</p> <h2 id="脚手架cli2和cli3"><a href="#脚手架cli2和cli3" class="header-anchor">#</a> 脚手架cli2和cli3</h2> <h3 id="创建项目"><a href="#创建项目" class="header-anchor">#</a> 创建项目</h3> <p>cli2使用vue webpack init name 创建
+cli3用vue creat name</p> <h3 id="运行项目"><a href="#运行项目" class="header-anchor">#</a> 运行项目</h3> <ol><li>cd到指定目录</li> <li>npm run dev（npm run 项目名：dev）</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2bf13046.js" defer></script><script src="/assets/js/2.d2965c34.js" defer></script><script src="/assets/js/10.4c0173d4.js" defer></script>
+  </body>
+</html>
